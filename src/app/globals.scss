@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --main-color: #0F0F0F;
+  --main-color-hover: #3d3d3d;
+  --identity-color: #D6B600;
+  --identity-color-hover: #a47f04;
+  --identity-color-dark: #87620C;
+  --secondary-color: #f6f6f6;
+  --secondary-color-hover: #e7e7e7;
+  --border-color: #d1d1d1;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--main-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--oswald);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p, span, a, li, button, label, time, blockquote, figcaption {
+  font-family: var(--source);
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 16px;
+  line-height: 1;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 80px 20px 80px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+article p a, article li a {
+  color: var(--identity-color-dark);
+  font-weight: bold;
+}
+
+article p a:hover,
+article li a:hover {
+  color: var(--identity-color);
+}
+
+.main-nav {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+  margin: 0;
+}
+
+.main-nav ul li {
+  margin: 20px;
+}
+
+.main-nav ul li:hover {
+  color: var(--identity-color);
+}
+
+/* Footer */
+footer {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  padding: 20px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+}
+
+footer div {
+  max-width: 1400px;
+  margin: auto;
+}
+
+footer div div {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.button-primary {
+  background-color: var(--identity-color);
+  color: var(--main-color);
+  border: none;
+  font-weight: bold;
+  height: 44px;
+  width: 240px;
+}
+
+.button-primary:hover {
+  background-color: var(--identity-color-hover);
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-color-hover);
+}
