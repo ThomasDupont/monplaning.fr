@@ -14,6 +14,11 @@
     "@fullcalendar/interaction": "^6.1.11",
     "@fullcalendar/react": "^6.1.11",
     "@fullcalendar/timegrid": "^6.1.11",
+    "@tanstack/react-query": "^5.32.0",
+    "@trpc/client": "^11.0.0-rc.351",
+    "@trpc/next": "^11.0.0-rc.351",
+    "@trpc/react-query": "^11.0.0-rc.351",
+    "@trpc/server": "^11.0.0-rc.351",
     "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18"
